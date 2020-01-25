@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Bebas+Neue|Fjalla+One|Barlow+Semi+Condensed');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+
+
+hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background : rgb(40, 46, 64);
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 80%;
+  /* background : #7c8692; */
+  border-radius: 100%;
+}
+
+.headerContent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  height: 90%;
+  background : rgb(40, 46, 64);
+  /* box-shadow: 13px 20px 10px rgba(20, 20, 20, 0.582); */
+}
+
+div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1 {
+  font-size: 70px;
+  color: white;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.clockwise {
+  display: flex;
+  justify-content: center;
+  border-top: 80px solid rgb(43, 36, 54); 
+  border-bottom: 80px solid rgb(43, 36, 54); 
+  border-left: 80px solid rgb(236, 203, 115);
+  border-right: 80px solid rgb(236, 203, 115);
+  border-radius: 100%;
+  width: 650px;
+  height: 6550px;
+  animation: spin 25s linear infinite;
+}
+
+.anticlockwise {
+  border-top: 75px solid #34dbcd; 
+  border-bottom: 75px solid #5f547e; 
+  border-left: 75px solid rgb(160, 78, 86);
+  border-right: 75px solid rgb(97, 48, 76);
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  animation: antispin 15s linear infinite;
+}
+
+.loaderOpp {
+animation: spinback 37.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes antispin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+@keyframes spinback {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.movingText {
+  font-size: 25px;
+  margin-top: -50px;
+  /* padding: -10px; */
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  /* width: 100%;
+  height: 100%; */
+  background : rgb(21, 25, 66);
+}
+
+
+
+
