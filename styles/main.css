@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css?family=Anton|Bebas+Neue|Fjalla+One|Barlow+Semi+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto+Slab|Ropa+Sans&display=swap');
 
 * {
   box-sizing: border-box;
@@ -35,15 +34,15 @@ width: 80px;
 height: 100vh;
 display: flex;
 flex-direction: column;
-background: rgb(182, 93, 102)
+background:rgba(0, 18, 32, 0.6);
 }
 
 .navButton {
   width: 70px;
   height: 70px;
   border-radius: 100%;
-  background-color: rgb(43, 36, 54);
-  border-color: rgb(43, 36, 54);
+  background-color: rgb(4, 25, 37);
+  border: 3px solid rgb(9, 55, 76);
   color: white;
   box-shadow: 6px 10px 7px rgba(20, 20, 20, 0.582);
 }
@@ -63,7 +62,14 @@ background: rgb(182, 93, 102)
   /* height: 100; */
   padding: 50px 0;
   padding-top: 50px;
-  background : rgb(40, 46, 64);
+  /* background : rgb(15, 60, 82); */
+  /* background-image: url('https://static.vecteezy.com/system/resources/previews/000/632/577/non_2x/vector-abstract-red-radial-dots-pattern-halftone-on-dark-blue-gradient-background-technology-digital-concept-futuristic-neon-lighting.jpg'); */
+  background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-018.jpg');
+  /* background-image: url('https://www.wallpaperbetter.com/wallpaper/978/520/921/modern-colorful-dropping-abstract-dark-background-720P-wallpaper.jpg'); */
+  /* background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm27-sasi-01-luxury.jpg?w=800&dpr=1&fit=default&crop=default&auto=format&fm=pjpg&q=75&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=263dcd719fc11f95bcdcd5b2d4fa6749'); */
+  /* background-image: url('https://www.wisc-online.com/assetrepository/getfile?id=1510&getType=view&width=0&height=0'); */
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   /* box-shadow: 13px 20px 10px rgba(20, 20, 20, 0.582); */
 }
@@ -82,8 +88,11 @@ header {
 
 
 h1 {
-  font-size: 70px;
-  color: #ead498;
+  font-size: 75px;
+  color: #e9e7e0;
+  font-family: 'Roboto Slab', sans-serif;
+  /* font-family: 'Ropa Sans', sans-serif; */
+  /* font-family: 'Playfair Display', sans-serif; */
 }
 
 h3 {
@@ -96,14 +105,17 @@ h3 {
 .clockwise {
   display: flex;
   justify-content: center;
-  border-top: 80px solid rgb(43, 36, 54); 
-  border-bottom: 80px solid rgb(43, 36, 54); 
-  border-left: 80px solid rgb(236, 203, 115);
-  border-right: 80px solid rgb(236, 203, 115);
+  border-top: 80px solid rgba(4, 26, 37, 0.9); 
+  border-bottom: 80px solid rgba(4, 26, 37, 0.9);
+  border-left: 80px solid rgba(127, 189, 204, 0.9);
+  border-right: 80px solid rgba(127, 189, 204, 0.9);
+  /* border-right: 80px solid rgba(36, 96, 126, 0.9); */
   border-radius: 50%;
-  width: 650px;
-  height: 650px;
+  width: 680px;
+  height: 680px;
   animation: spin 25s linear infinite;
+  /* background-image: url('https://image.shutterstock.com/image-photo/glitter-vintage-lights-background-gold-260nw-226746934.jpg'); */
+  /* background: rgb(127, 189, 204); */
 }
 
 .anticlockwise {
@@ -112,19 +124,30 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border-top: 75px solid rgb(160, 78, 86); 
-  border-bottom: 75px solid rgb(97, 48, 76);
-  border-left: 75px solid rgb(160, 78, 86); 
-  border-right: 75px solid rgb(97, 48, 76);
+  border-top: 60px double rgba(4, 26, 37, 0.8);
+  border-bottom: 60px double rgba(4, 26, 37, 0.8);
+  border-left: 60px solid  rgba(4, 26, 37, 0.8);
+  border-right: 60px solid  rgba(4, 26, 37, 0.8);
   border-radius: 50%;
   width: 100%;
   height: 100%;
   animation: antispin 15s linear infinite;
-  background: #2b2436
 }
 
+/* old colours: */
+/* border-top: 20px solid rgb(160, 78, 86); 
+border-bottom: 20px solid rgb(97, 48, 76);
+border-left: 75px solid rgb(160, 78, 86); 
+border-right: 75px solid rgb(97, 48, 76); */
+
 .loaderOpp {
+display: flex;
+align-items: center;
 animation: spinback 37.5s linear infinite;
+height: 100%;
+margin: 0;
+border-radius: 50%;
+background: rgba(15, 60, 82, 0.7);
 }
 
 @keyframes spin {
@@ -140,23 +163,22 @@ animation: spinback 37.5s linear infinite;
   100% { transform: rotate(360deg); }
 }
 
-.movingText {
-  width: 340px;
-  color: white;
-  font-size: 25px;
-  margin: -36px;
-  margin-top: -70px;
-}
 img {
   margin: 0;
   padding: 0;
+}
+
+.topText {
+  position: absolute;
+  width: 350px;
+  margin-top: -280px;
 }
 
 .bottomText {
   position: absolute;
   width: 350px;
   transform: rotate(183deg);
-  margin-top: 260px;
+  margin-top: 280px;
   margin-left: -10px;
 }
 
@@ -164,12 +186,12 @@ img {
   position: absolute;
   width: 280px;
   transform: rotate(90deg);
-  margin-left: 270px;
+  margin-left: 290px;
   /* margin-left: 400px; */
 }
 
 main {
-  border-top: 10px solid rgb(236, 203, 115);
+  border-top: 10px solid rgb(158, 217, 224);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -180,3 +202,49 @@ main {
 
 /* cyan */
 
+/* ----------- tablet size -------------- */
+
+@media only screen and (max-width: 1200px) {
+
+  .clockwise {
+    display: flex;
+    justify-content: center;
+    border-top: 50px solid rgb(43, 36, 54); 
+    border-bottom: 50px solid rgb(43, 36, 54); 
+    border-left: 50px solid rgb(236, 203, 115);
+    border-right: 50px solid rgb(236, 203, 115);
+    border-radius: 50%;
+    width: 520px;
+    height: 520px;
+    animation: spin 25s linear infinite;
+  }
+  
+  .anticlockwise {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 30px solid rgb(160, 78, 86); 
+    border-bottom: 30px solid rgb(97, 48, 76);
+    border-left: 30px solid rgb(160, 78, 86); 
+    border-right: 30px solid rgb(97, 48, 76);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    animation: antispin 15s linear infinite;
+    background: #2b2436
+  }
+
+  .bottomText {
+    width: 250px;
+    margin-top: 219px;
+    margin-left: -10px;
+  }
+  
+  .rightText {
+    width: 280px;
+    transform: rotate(90deg);
+    margin-left: 270px;
+  }
+}
