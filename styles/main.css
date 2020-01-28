@@ -64,10 +64,10 @@ background:rgba(0, 18, 32, 0.6);
   padding-top: 50px;
   /* background : rgb(15, 60, 82); */
   /* background-image: url('https://static.vecteezy.com/system/resources/previews/000/632/577/non_2x/vector-abstract-red-radial-dots-pattern-halftone-on-dark-blue-gradient-background-technology-digital-concept-futuristic-neon-lighting.jpg'); */
-  background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-018.jpg');
+  /* background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-018.jpg'); */
   /* background-image: url('https://www.wallpaperbetter.com/wallpaper/978/520/921/modern-colorful-dropping-abstract-dark-background-720P-wallpaper.jpg'); */
   /* background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm27-sasi-01-luxury.jpg?w=800&dpr=1&fit=default&crop=default&auto=format&fm=pjpg&q=75&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=263dcd719fc11f95bcdcd5b2d4fa6749'); */
-  /* background-image: url('https://www.wisc-online.com/assetrepository/getfile?id=1510&getType=view&width=0&height=0'); */
+  background-image: url('https://www.wisc-online.com/assetrepository/getfile?id=1510&getType=view&width=0&height=0');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -147,7 +147,8 @@ animation: spinback 37.5s linear infinite;
 height: 100%;
 margin: 0;
 border-radius: 50%;
-background: rgba(15, 60, 82, 0.7);
+background: rgba(15, 60, 82, 0.5);
+border: 10px solid rgba(138, 184, 190, 0.2);
 }
 
 @keyframes spin {
@@ -184,7 +185,7 @@ img {
 
 .rightText {
   position: absolute;
-  width: 280px;
+  width: 260px;
   transform: rotate(90deg);
   margin-left: 290px;
   /* margin-left: 400px; */
@@ -209,10 +210,7 @@ main {
   .clockwise {
     display: flex;
     justify-content: center;
-    border-top: 50px solid rgb(43, 36, 54); 
-    border-bottom: 50px solid rgb(43, 36, 54); 
-    border-left: 50px solid rgb(236, 203, 115);
-    border-right: 50px solid rgb(236, 203, 115);
+    border-width: 60px;
     border-radius: 50%;
     width: 520px;
     height: 520px;
@@ -225,26 +223,32 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 30px solid rgb(160, 78, 86); 
-    border-bottom: 30px solid rgb(97, 48, 76);
-    border-left: 30px solid rgb(160, 78, 86); 
-    border-right: 30px solid rgb(97, 48, 76);
+    border-width: 40px;
     border-radius: 50%;
     width: 100%;
     height: 100%;
     animation: antispin 15s linear infinite;
-    background: #2b2436
+  }
+
+  .topText {
+    position: absolute;
+    width: 250px;
+    margin-top: -218px;
   }
 
   .bottomText {
     width: 250px;
     margin-top: 219px;
-    margin-left: -10px;
+    margin-left: -11px;
   }
   
   .rightText {
-    width: 280px;
+    width: 180px;
     transform: rotate(90deg);
-    margin-left: 270px;
+    margin-left: 230px;
+  }
+
+  h1 {
+    font-size: 60px;
   }
 }
