@@ -9,7 +9,7 @@ function runPorftolio() {
     homeButton.style.boxShadow = 'none'
     setTimeout(() => {
       homeButton.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'
-    }, 1500)
+    }, 500)
   })
 }
 
