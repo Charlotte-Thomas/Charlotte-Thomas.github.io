@@ -11,6 +11,7 @@ function runPorftolio() {
       homeButton.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'
     }, 500)
   })
+
 }
 
 document.addEventListener('DOMContentLoaded', runPorftolio)
