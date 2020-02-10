@@ -12,7 +12,7 @@ body {
   justify-content: flex-end;
   margin: 0;
   padding: 0;
-  /* background: blue; */
+  background : rgb(40, 46, 64);
 }
 
 .allContent {
@@ -20,8 +20,6 @@ body {
   flex-direction: column;
   /* align-items: space-between; */
   width: 100%;
-  /* background: blue; */
-  background: blue;
   background-image: url('https://www.wisc-online.com/assetrepository/getfile?id=1510&getType=view&width=0&height=0');
   /* background-image: url('https://wallup.net/wp-content/uploads/2018/03/19/575325-landscape-forest-deer-artwork-pine_trees-illustration-mountains-minimalism-animals-Fire_Watch.jpg'); */
   background-repeat: no-repeat;
@@ -43,7 +41,15 @@ display: flex;
 flex-direction: column;
 background:rgba(27, 36, 50,0.5);
 /* background:rgba(0, 18, 32, 0.6); */
+background: rgba(186, 205, 207, 0.205);
+background: rgba(52, 73, 94, 0.6);
 }
+
+  /* 8FABB7 */
+  /* #d9e8ea */
+  /* #BACDCF */
+  /* #6E8AA4 */
+  /* #34495E */
 
 .navButton {
   display: flex;
@@ -51,10 +57,10 @@ background:rgba(27, 36, 50,0.5);
   width: 70px;
   height: 70px;
   border-radius: 100%;
-  background-color: rgb(4, 25, 37);
-  border: 3px solid rgb(98, 133, 150);
+  background-color: rgba(4, 25, 37, 0.815);
+  border: 3px solid #6E8AA4;
   /* border: 3px solid rgb(9, 55, 76); */
-  color: white;
+  color: rgb(181, 204, 214);
   font-size: 12px;
   box-shadow: 6px 10px 7px rgba(20, 20, 20, 0.582);
 }
@@ -243,9 +249,6 @@ img {
   background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
 }
 
-#section06 { 
-  background-image: url('https://www.nxworld.net/example/css-scroll-down-button/bg06.jpg');
-}
 
 #section06 a {
   padding-top: 70px;
@@ -366,7 +369,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 200px;
+  /* background: blue; */
+  margin: 30px 200px;
   /* height: 650px; */
   width: 80vw;
 }
@@ -375,7 +379,7 @@ main {
   margin-bottom: 50px;
 }
 
-p {
+.aboutInfo {
   font-size: 22px;
   text-align: center;
   color: rgb(197, 193, 193);
@@ -383,17 +387,47 @@ p {
 
 .skills {
   display: flex;
-  width: 100%;
   flex-direction: row;
-  justify-content: space-evenly;
-  height: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 80%;
+  /* 8FABB7 */
+  /* #d9e8ea */
   /* #BACDCF */
   /* #6E8AA4 */
   /* #34495E */
 }
+
 i {
   color: #6E8AA4;
-  font-size: 50px;
+  font-size: 65px;
 }
+
+.skillIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 8px;
+  border: 2px solid rgb(189, 189, 224);
+  padding: 15px;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  color: #BACDCF;
+}
+
+.icon {
+  width: 65px;
+}
+
+.iconText {
+  text-align: bottom;
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+
