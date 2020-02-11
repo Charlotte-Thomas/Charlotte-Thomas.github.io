@@ -12,7 +12,7 @@ function runPorftolio() {
       homeButton.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'
     }, 500)
   })
-  
+
   aboutButton.addEventListener('click', () => {
     window.scrollTo({ top: 840, behavior: 'smooth' })
     aboutButton.style.boxShadow = 'none'
@@ -33,7 +33,7 @@ function runPorftolio() {
   const skillIcons = document.getElementsByClassName('skillIcon')
   console.log(skillIcons[0])
 
-  Array.from(skillIcons).forEach(function(icon) {
+  Array.from(skillIcons).forEach(function (icon) {
     icon.addEventListener('mouseover', () => {
       // icon.style.backgroundColor = 'rgba(72, 72, 88, 0.72)'
       icon.style.backgroundColor = 'rgba(7, 7, 14, 0.35)'
@@ -41,18 +41,30 @@ function runPorftolio() {
     })
   })
 
-  Array.from(skillIcons).forEach(function(icon) {
+  Array.from(skillIcons).forEach(function (icon) {
     icon.addEventListener('mouseout', () => {
       icon.style.backgroundColor = 'rgba(189, 189, 224, 0)'
       icon.children[1].innerHTML = ''
     })
   })
 
+  const imgLink = document.getElementsByClassName('imgLink')
+  const link1 = document.querySelector('.linkText1')
+  const link2 = document.querySelector('.linkText2')
+
+  Array.from(imgLink).forEach(function (icon) {
+    icon.addEventListener('mouseover', () => {
+      if (icon.id === 'img1') {
+        link1.style.display = 'block'
+      } else if (icon.id === 'img2') {
+        link2.style.display = 'block'
+      }
+    })
+  })
 
 
-  // skillIcons.addEventListener('mouseout', () => {
-  //   skillIcons.style.backgroundColor = 'none'
-  // })
+
+
 
 }
 
