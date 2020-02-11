@@ -433,7 +433,7 @@ i {
   text-align: bottom;
   margin-top: 4px;
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 /* ----------- Projects section ---------- */
@@ -443,16 +443,49 @@ i {
   flex-direction: column;
   align-items: center;
   background: rgba(52, 73, 94, 0.226);
+  border: 15px solid rgba(7, 7, 14, 0.35);
+  border-radius: 10px;
+}
+
+#project1 {
+  background: rgba(43, 36, 54, 0.226);
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 0;
+  background:  rgba(52, 73, 94, 0.637);
+  /* border: 16px solid rgb(18, 18, 53); */
+  border-bottom: 10px solid rgb(30, 29, 46);
+  margin-bottom: 20px;
+}
+
+#projectHeader1 {
+  background: rgb(43, 36, 54);
+}
+
+.headerImg {
+  width: 65px;
+  /* margin-top: 15px; */
+  border: 3px solid rgb(147, 152, 106);
+  background: rgb(43, 36, 54);
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .projectName {
-  font-size: 60px;
+  font-size: 65px;
   text-align: center;
-  margin-bottom: 5px;
-  background:  rgba(52, 73, 94, 0.637);
-  width: 100%;
+  width: 40%;
   margin: 0;
-  padding-top: 20px;
+  /* padding-top: 20px; */
+}
+
+#name1 {
+  color: rgb(236, 203, 115);
+  background: rgb(43, 36, 54);
 }
 
 .overview {
@@ -463,8 +496,12 @@ i {
   width: 40%;
   font-size: 20px;
   background: rgba(52, 73, 94, 0.637);
-  width: 100%;
+  width: 50%;
   padding-bottom: 40px;
+}
+
+.projectType {
+  font-size: 23px;
 }
 
 .stacks {
@@ -476,11 +513,11 @@ i {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 30%;
+  width: 40%;
 }
 
 .smallIcon {
-  width: 40px;
+  width: 50px;
 }
 
 .info {
@@ -494,6 +531,16 @@ i {
   font-size: 18px;
   background: rgba(52, 73, 94, 0.637);
   margin-bottom: 30px;
+}
+
+.projectImg {
+  width: 70%;
+  margin: 60px 0;
+  /* border: 10px solid rgb(109, 138, 164); */
+  box-shadow: 15px 15px 20px rgba(20, 20, 20, 0.582);
+}
+.projectImg:hover {
+  box-shadow: 25px 25px 20px rgba(20, 20, 20, 0.582);
 }
 
 .description {
