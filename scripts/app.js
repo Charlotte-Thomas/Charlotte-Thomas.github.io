@@ -52,17 +52,42 @@ function runPorftolio() {
   const linkText = document.getElementsByClassName('linkText')
   const linkArray = []
 
-  
+
   Array.from(imgLink).forEach(function (icon) {
     linkArray.push(icon)
+    // if (linkArray.length === 6) {
+    //   fullArray()
+    // }
   })
 
+  // function fullArray() {
   linkArray.forEach((item) => {
     const position = linkArray.indexOf(item)
     item.addEventListener('mouseover', () => {
       linkText[position].style.display = 'block'
+      // linkText[position].style.animation = 'links 1s normal'
+      // setTimeout(() => {
+      //   linkText[position].style.animation = ' linksOut 1s normal'
+      //   setTimeout(() => {
+      //     linkText[position].style.display = 'none'
+      //   }, 1000)
+      //   console.log('bye')
+      // }, 2000)
     })
   })
+  
+  // linkArray.forEach((item) => {
+  //   const position = linkArray.indexOf(item)
+  //   item.addEventListener('mouseleave', () => {
+  //     setTimeout(() => {
+  //       linkText[position].style.animation = 'linksOut 1s normal'
+  //       setTimeout(() => {
+  //         linkText[position].style.display = 'none'
+  //       }, 1000)
+  //       console.log('bye')
+  //     }, 2000)
+  //   })
+  // })
 
 
 }

@@ -451,6 +451,9 @@ i {
 #project1 {
   background: rgba(43, 36, 54, 0.226);
 }
+#project3 {
+  background:  rgba(0, 44, 50, 0.5);
+}
 
 .projectHeader {
   display: flex;
@@ -459,12 +462,25 @@ i {
   padding: 50px 0;
   background:  rgba(52, 73, 94, 0.637);
   /* border: 16px solid rgb(18, 18, 53); */
-  border-bottom: 10px solid rgb(30, 29, 46);
+  /* border-bottom: 10px solid rgb(30, 29, 46); */
   margin-bottom: 20px;
 }
 
 #projectHeader1 {
   background: rgb(43, 36, 54);
+  border-bottom: 10px solid rgb(30, 29, 46);
+}
+
+#projectHeader2 {
+ padding: 50px 25%;
+ border-bottom: 10px solid rgb(30, 35, 52);
+}
+
+#projectHeader3 {
+ padding: 50px 25%;
+ /* background: rgb(0, 44, 50); */
+ background: rgb(9, 41, 48);
+ border-bottom: 10px solid rgb(17, 31, 43);
 }
 
 .headerImg {
@@ -480,8 +496,17 @@ i {
   width: 80px;
   /* margin-top: 15px; */
   border: 3px solid rgb(140, 204, 206);
-  background: rgb(22, 36, 48);
-  padding: 5px;
+  background: rgb(52, 73, 93);
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.headerImg3 {
+  width: 80px;
+  /* margin-top: 15px; */
+  border: 3px solid rgb(1, 174, 173);
+  background: rgb(0, 44, 50);
+  padding: 13px;
   border-radius: 50%;
 }
 
@@ -496,6 +521,14 @@ i {
 #name1 {
   color: rgb(236, 203, 115);
   background: rgb(43, 36, 54);
+}
+#name2 {
+  color: rgb(140, 204, 206);
+  /* background: rgb(43, 36, 54); */
+}
+#name3 {
+  color: rgb(1, 174, 173);
+  /* background: rgb(43, 36, 54); */
 }
 
 .overview {
@@ -616,6 +649,28 @@ a {
     opacity: 1;
   }
 }
+@-webkit-keyframes linksOut {
+  0% {
+    -webkit-transform: translate(0);
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  55% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.1;
+  }
+  100% {
+    -webkit-transform: translate(-100px);
+    opacity: 0;
+  }
+}
 
 /* ----------- Footer ------------ */
 
@@ -623,10 +678,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
   margin-bottom: 0;
   width: 100%;
   text-align: center;
+  border-top: 1px solid lightblue;
 }
 
 footer p {
@@ -641,6 +696,6 @@ footer p {
   margin-left: 10px;
   color: white;
   border: 1px solid lightblue;
-  background: rgb(32, 32, 68);
-  padding: 7px;
+  /* background: rgb(32, 32, 68); */
+  padding: 7px 15px;
 }
