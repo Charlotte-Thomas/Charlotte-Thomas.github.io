@@ -1,9 +1,9 @@
 function runPorftolio() {
 
-  const title = document.querySelector('h1')
   const homeButton = document.querySelector('.navButton1')
   const aboutButton = document.querySelector('.navButton2')
   const skillButton = document.querySelector('.navButton3')
+  const projectButton = document.querySelector('.navButton4')
 
   homeButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -23,6 +23,14 @@ function runPorftolio() {
 
   skillButton.addEventListener('click', () => {
     window.scrollTo({ top: 1500, behavior: 'smooth' })
+    skillButton.style.boxShadow = 'none'
+    setTimeout(() => {
+      skillButton.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'
+    }, 500)
+  })
+
+  projectButton.addEventListener('click', () => {
+    window.scrollTo({ top: 2370, behavior: 'smooth' })
     skillButton.style.boxShadow = 'none'
     setTimeout(() => {
       skillButton.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'
