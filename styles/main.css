@@ -24,8 +24,8 @@ body {
   /* background-image: url('https://www.wisc-online.com/assetrepository/getfile?id=1510&getType=view&width=0&height=0'); */
   background-image: url('https://wallup.net/wp-content/uploads/2018/03/19/575325-landscape-forest-deer-artwork-pine_trees-illustration-mountains-minimalism-animals-Fire_Watch.jpg');
   background-repeat: no-repeat;
-  background-size: 100vw;
   /* background-position: top; */
+  background-size: 100vw 100vh;
 }
 
 nav {
@@ -93,7 +93,7 @@ background: rgba(52, 73, 94, 0.6);
   /* background-repeat: no-repeat; */
   /* opacity: 50%; */
   /* background: rgba(0, 0, 0, 0.39); */
-  background-image: linear-gradient(rgba(33, 213, 226, 0.253), rgba(14, 33, 46, 0.219), rgb(34, 40, 56));
+  background-image: linear-gradient(rgba(11, 34, 34, 0.253), rgba(0, 0, 0, 0.219), rgb(34, 40, 56));
   background-size: cover;
   background-position: right;
   margin: 0;
@@ -131,11 +131,12 @@ h3 {
 .clockwise {
   display: flex;
   justify-content: center;
-  border-top: 80px solid rgba(4, 26, 37, 0.5); 
-  border-bottom: 80px solid rgba(4, 26, 37, 0.5);
-  border-left: 80px solid rgba(127, 189, 204, 0.5);
-  border-right: 80px solid rgba(127, 189, 204, 0.5);
-  /* border-right: 80px solid rgba(36, 96, 126, 0.9); */
+  border-top: 80px solid rgba(4, 26, 37, 0.7); 
+  border-bottom: 80px solid rgba(4, 26, 37, 0.7);
+  border-left: 80px solid rgba(118, 154, 167, 0.71);
+  border-right: 80px solid rgba(118, 154, 167, 0.71);
+  /* border-right: 80px solid rgba(127, 189, 204, 0.5); */
+  /* border-right: 80px solid rgba(70, 126, 151, 0.62); */
   border-radius: 50%;
   width: 680px;
   height: 680px;
