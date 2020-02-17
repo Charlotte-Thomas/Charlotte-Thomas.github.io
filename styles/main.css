@@ -7,6 +7,7 @@
 body {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   height: 100vh;
   width: 100vw;
   justify-content: flex-end;
@@ -23,9 +24,8 @@ body {
   background-image: url('https://www.wisc-online.com/assetrepository/getfile?id=1510&getType=view&width=0&height=0');
   /* background-image: url('https://wallup.net/wp-content/uploads/2018/03/19/575325-landscape-forest-deer-artwork-pine_trees-illustration-mountains-minimalism-animals-Fire_Watch.jpg'); */
   background-repeat: no-repeat;
-  /* opacity: 50%; */
-  background-size: cover;
-  background-position: right;
+  background-size: 100vw;
+  /* background-position: right; */
 }
 
 nav {
@@ -615,4 +615,32 @@ a {
     -webkit-transform: translate(0);
     opacity: 1;
   }
+}
+
+/* ----------- Footer ------------ */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 70%;
+}
+
+.iconsLink {
+  margin-left: 10px;
+  color: white;
+  border: 1px solid lightblue;
+  background: rgb(32, 32, 68);
+  padding: 7px;
 }
