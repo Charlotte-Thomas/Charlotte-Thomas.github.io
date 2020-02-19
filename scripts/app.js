@@ -63,9 +63,6 @@ function runPorftolio() {
 
   Array.from(imgLink).forEach(function (icon) {
     linkArray.push(icon)
-    // if (linkArray.length === 6) {
-    //   fullArray()
-    // }
   })
 
   // function fullArray() {
@@ -73,27 +70,32 @@ function runPorftolio() {
     const position = linkArray.indexOf(item)
     item.addEventListener('mouseover', () => {
       linkText[position].style.display = 'block'
+      // linkText[position].style.marginLeft = '20px'
+      linkText[position].style.animation = 'links 1s normal'
       // linkText[position].style.animation = 'links 1s normal'
       // setTimeout(() => {
-      //   linkText[position].style.animation = ' linksOut 1s normal'
-      //   setTimeout(() => {
-      //     linkText[position].style.display = 'none'
-      //   }, 1000)
+      //   linkText[position].style.animation = ' linksOut 1s normal forwards'
+      //   // linkText[position].style.display = 'none'
+      //   // setTimeout(() => {
+      //   //   linkText[position].style.display = 'none'
+      // }, 3000)
       //   console.log('bye')
       // }, 2000)
     })
   })
-  
+
   // linkArray.forEach((item) => {
   //   const position = linkArray.indexOf(item)
-  //   item.addEventListener('mouseleave', () => {
-  //     setTimeout(() => {
-  //       linkText[position].style.animation = 'linksOut 1s normal'
-  //       setTimeout(() => {
-  //         linkText[position].style.display = 'none'
-  //       }, 1000)
-  //       console.log('bye')
-  //     }, 2000)
+  //   item.addEventListener('mouseout', () => {
+  //     // setTimeout(() => {
+  //     // linkText[position].style.display = 'block'
+  //     linkText[position].style.animation = 'linksOut 1s normal forwards'
+  //     // setTimeout(() => {
+  //     //   linkText[position].style.display = 'none'
+  //     //   // linkText[position].style.animation = 'none'
+  //     // }, 1000)
+  //     console.log('bye')
+  //     // }, 2000)
   //   })
   // })
 

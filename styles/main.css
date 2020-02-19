@@ -100,6 +100,45 @@ background: rgba(52, 73, 94, 0.6);
   /* box-shadow: 13px 20px 10px rgba(20, 20, 20, 0.582); */
 }
 
+.contactLinks {
+  position: absolute;
+  left: 20px;
+  top: 2px;
+}
+
+.contactContainer {
+  display: flex;
+}
+
+.contactImg {
+  width: 80px;
+}
+
+#contactImg1 {
+  opacity: 0;
+  animation: fadeIn1 2s normal forwards;
+}
+#contactImg2 {
+  opacity: 0;
+  animation: fadeIn1 2s normal forwards;
+  animation-delay: 0.7s;
+}
+#contactImg3 {
+  opacity: 0;
+  animation: fadeIn1 2s normal forwards;
+  animation-delay: 1.4s;
+}
+
+@-webkit-keyframes fadeIn1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+
 header {
   display: flex;
   justify-content: center;
@@ -709,7 +748,7 @@ a {
 .linkText {
   color: #d9e8ea;
   display: none;
-  animation: links 1s normal;
+  /* animation: links 1s normal; */
   margin-left: 20px;
   /* width: 100%; */
 }
