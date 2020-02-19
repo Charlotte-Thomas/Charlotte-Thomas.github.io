@@ -31,9 +31,9 @@ function runPorftolio() {
 
   projectButton.addEventListener('click', () => {
     window.scrollTo({ top: 2370, behavior: 'smooth' })
-    skillButton.style.boxShadow = 'none'
+    projectButton.style.boxShadow = 'none'
     setTimeout(() => {
-      skillButton.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'
+      projectButton.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'
     }, 500)
   })
 
