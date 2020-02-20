@@ -410,7 +410,7 @@ main {
   flex-direction: column;
   align-items: center;
   /* background: blue; */
-  margin: 30px 200px;
+  margin: 30px 0;
   /* height: 650px; */
   width: 80vw;
   color: rgb(197, 193, 193);
@@ -424,9 +424,33 @@ main {
 
 /* --------- About section --------- */
 
+.aboutSections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aboutHeader {
+  font-size: 50px;
+}
+
+.intro {
+  width: 47%;
+  text-align: center;
+}
+
+.interests {
+  width: 47%;
+  text-align: center;
+}
+
+.musicHeader {
+  margin-top: -25px;
+}
+
 .aboutInfo {
   font-size: 22px;
-  text-align: center;
+  text-align: left;
   color: rgb(197, 193, 193);
   font-family: 'Ropa Sans', sans-serif;
 }
@@ -797,6 +821,25 @@ a {
     -webkit-transform: translate(-100px);
     opacity: 0;
   }
+}
+
+/* ----------- Contact ----------- */
+
+.contactSection {
+  margin-top: -100px;
+}
+
+.contactLinkLower {
+  color: rgb(197, 193, 193);
+}
+
+.contactLinkLower:hover {
+  opacity: 70%;
+}
+
+.lowerContactImg {
+  width: 60px;
+  margin-right: 20px;
 }
 
 /* ----------- Footer ------------ */
