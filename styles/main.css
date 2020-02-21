@@ -976,7 +976,7 @@ footer p {
   }
 }
 
-/* ----------- tablet size -------------- */
+/* ----------- mobile size -------------- */
 
 @media only screen and (max-width: 800px) {
 
@@ -984,19 +984,23 @@ footer p {
     background-size: 100vw 430px;
   }
 
+  .contactImg {
+    width: 50px;
+  }
+
   .headerContent {
-    height: 430px;
-    padding-top: 60px;
+    height: 400px;
   }
 
   .clockwise {
     display: flex;
     justify-content: center;
-    border-width: 35px;
+    border-width: 40px;
     border-radius: 50%;
     width: 300px;
     height: 300px;
     animation: spin 25s linear infinite;
+    margin-top: -5px;
   }
   
   .anticlockwise {
@@ -1014,30 +1018,34 @@ footer p {
 
   .topText {
     position: absolute;
-    width: 240px;
-    margin-top: -210px;
+    width: 140px;
+    margin-top: -120px;
   }
 
   .bottomText {
-    width: 250px;
-    margin-top: 210px;
-    margin-left: -11px;
+    width: 150px;
+    margin-top: 120px;
+    margin-left: -4px;
   }
   
   .rightText {
-    width: 180px;
+    width: 110px;
     transform: rotate(90deg);
-    margin-left: 220px;
+    margin-left: 125px;
   }
 
   .leftText {
-    width: 180px;
+    width: 120px;
     /* transform: rotate(90deg); */
-    margin-left: -220px;
+    margin-left: -125px;
+  }
+
+  #section06 {
+    display: none;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .skills {
@@ -1048,13 +1056,184 @@ nav {
   display: none;
 }
 
+.mainSection {
+  width: 90%;
+}
+
 .sectionHeader {
   font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.aboutSections {
+  flex-direction: column;
+  margin-bottom: -40px;
+}
+
+.intro {
+  width: 100%;
+}
+
+.interests {
+  width: 100%;
+}
+
+.aboutHeader {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+.musicHeader {
+  margin-top: 5px;
+  font-size: 15px;
 }
 
 .aboutInfo {
-  font-size: 10px;
-  /* width: 100%; */
+  font-size: 14px;
+  text-align: center;
+}
+
+
+.project {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#project4 {
+  border-width: 10px;
+}
+#project3 {
+  border-width: 10px;
+}
+#project2 {
+  border-width: 10px;
+}
+#project1 {
+  border-width: 10px;
+}
+
+.projectHeader {
+  height: 100px;
+  width: 90%;
+}
+
+#projectHeader4 {
+  border-width: 4px;
+ }
+#projectHeader3 {
+  border-width: 4px;
+ }
+#projectHeader2 {
+  border-width: 4px;
+ }
+#projectHeader1 {
+  border-width: 4px;
+ }
+
+.projectName {
+  font-size: 40px;
+}
+
+.headerImg4 {
+  width: 55px;
+  border-width: 2px;
+}
+.headerImg3 {
+  width: 55px;
+  border-width: 2px;
+}
+.headerImg2 {
+  width: 55px;
+  border-width: 2px;
+}
+.headerImg {
+  width: 55px;
+  border-width: 2px;
+}
+
+.overview {
+  width: 80%;
+  padding-bottom: 10px;
+}
+
+.projectType {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.smallSkillIcon {
+  margin-top: 10px;
+}
+
+.smallIcon {
+  width: 40px;
+}
+
+.projectImg {
+  margin-top: 40px;
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.info {
+  flex-direction: column;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+.description {
+  width: 100%;
+  font-size: 15px;
+  margin: 0;
+  padding: 20px 10px;
+}
+.description3 {
+  font-size: 15px;
+  margin: 0;
+  padding: 10px 10px;
+}
+
+.links {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.imgLink {
+  width: 70px;
+}
+
+
+a {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.linkText {
+  display: block;
+  margin: 0;
+  font-size: 13px;
+}
+
+.contactSection {
+  margin-top: -20px;
+}
+
+.contactLinkLower {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+footer p {
+  font-size: 12px;
+}
+.iconsLink {
+  font-size: 12px;
 }
 
 
