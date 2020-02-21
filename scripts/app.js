@@ -4,37 +4,44 @@ function runPorftolio() {
   const aboutButton = document.querySelector('.navButton2')
   const skillButton = document.querySelector('.navButton3')
   const projectButton = document.querySelector('.navButton4')
+  const contactButton = document.querySelector('.navButton5')
 
-  homeButton.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-    homeButton.style.boxShadow = 'none'
+  const home = document.getElementById('home')
+  const about = document.getElementById('about')
+  const skills = document.getElementById('skills')
+  const projects = document.getElementById('projects')
+  const contact = document.getElementById('contact')
+
+  function addStyles(button) {
+    return `${button.style.boxShadow = 'none'}`,
     setTimeout(() => {
-      homeButton.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'
+      `${button.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'}`
     }, 500)
+  }
+  
+  homeButton.addEventListener('click', () => {
+    home.scrollIntoView({ behavior: 'smooth' })
+    addStyles(homeButton)
   })
 
   aboutButton.addEventListener('click', () => {
-    window.scrollTo({ top: 840, behavior: 'smooth' })
-    aboutButton.style.boxShadow = 'none'
-    setTimeout(() => {
-      aboutButton.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'
-    }, 500)
+    about.scrollIntoView({ behavior: 'smooth' })
+    addStyles(aboutButton)
   })
 
   skillButton.addEventListener('click', () => {
-    window.scrollTo({ top: 1500, behavior: 'smooth' })
-    skillButton.style.boxShadow = 'none'
-    setTimeout(() => {
-      skillButton.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'
-    }, 500)
+    skills.scrollIntoView({ behavior: 'smooth' })
+    addStyles(skillButton)
   })
 
   projectButton.addEventListener('click', () => {
-    window.scrollTo({ top: 2370, behavior: 'smooth' })
-    projectButton.style.boxShadow = 'none'
-    setTimeout(() => {
-      projectButton.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'
-    }, 500)
+    projects.scrollIntoView({ behavior: 'smooth' })
+    addStyles(projectButton)
+  })
+
+  contactButton.addEventListener('click', () => {
+    contact.scrollIntoView({ behavior: 'smooth' })
+    addStyles(contactButton)
   })
 
 
