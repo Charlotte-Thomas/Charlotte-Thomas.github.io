@@ -1137,6 +1137,13 @@ h2 {
 
 .projectName {
   font-size: 40px;
+  margin: 0 15px;
+  padding: 0;
+}
+
+#name1 {
+  font-size: 30px;
+  width: 40%;
 }
 
 .headerImg4 {
