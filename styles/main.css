@@ -22,7 +22,8 @@ body {
   /* align-items: space-between; */
   width: 100%;
   /* background-image: url('https://www.wisc-online.com/assetrepository/getfile?id=1510&getType=view&width=0&height=0'); */
-  background-image: url('https://wallup.net/wp-content/uploads/2018/03/19/575325-landscape-forest-deer-artwork-pine_trees-illustration-mountains-minimalism-animals-Fire_Watch.jpg');
+  /* background-image: url('https://wallup.net/wp-content/uploads/2018/03/19/575325-landscape-forest-deer-artwork-pine_trees-illustration-mountains-minimalism-animals-Fire_Watch.jpg'); */
+  background-image: url('../images/background.jpg');
   background-repeat: no-repeat;
   /* background-position: top; */
   background-size: 100vw 100vh;
@@ -491,6 +492,7 @@ i {
   width: 100px;
   height: 100px;
   color: #BACDCF;
+  opacity: 0;
 }
 
 .icon {
@@ -856,6 +858,7 @@ footer {
   width: 100%;
   text-align: center;
   border-top: 1px solid lightblue;
+  opacity: 70%;
 }
 
 footer p {
@@ -872,4 +875,84 @@ footer p {
   border: 1px solid lightblue;
   /* background: rgb(32, 32, 68); */
   padding: 7px 15px;
+}
+
+/* ----------- Slide animations ---------- */
+
+.show-on-scroll {
+  opacity: 0;
+}
+.is-visible-left {
+  animation: slideInLeft 2s normal forwards;
+}
+.is-visible-right {
+  animation: slideInRight 2s normal forwards;
+}
+
+.fade-in {
+  animation: fadeIn2 3s normal forwards;
+}
+
+.drop-in {
+  opacity: 0;
+  animation: drop 1s normal forwards;
+}
+
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate(-700px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translate(500px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+    /* background: rgba(173, 216, 230, 0.233); */
+  }
+  100% {
+    opacity: 1;
+    background: none;
+  }
+}
+
+@-webkit-keyframes drop {
+  0% {
+    -webkit-transform: translate(0px, 110px);
+    opacity: 0;
+  }
+  40% {
+      -webkit-transform: translate(0, 0);
+    }
+  53% {
+    -webkit-transform: translate(0px, 15px);
+  }
+  70% {
+    -webkit-transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
 }
