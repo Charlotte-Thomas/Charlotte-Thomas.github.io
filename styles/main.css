@@ -80,7 +80,7 @@ background: rgba(52, 73, 94, 0.6);
   width: 100%;
   height: 100vh;
   /* padding: 50px 0; */
-  padding-top: 20px;
+  padding-top: 2%;
   /* background : rgb(15, 60, 82); */
   /* background-image: url('https://cdn.pizap.com/pizapfiles/images/photo_backgrounds_textures_app04.jpg'); */
   /* background-image: url('https://wallup.net/wp-content/uploads/2018/03/19/575325-landscape-forest-deer-artwork-pine_trees-illustration-mountains-minimalism-animals-Fire_Watch.jpg'); */
@@ -1243,5 +1243,62 @@ footer p {
   font-size: 12px;
 }
 
+
+}
+
+
+
+/* ----------- full screen size -------------- */
+
+@media only screen and (min-height: 1000px) and (min-width: 1500px) {
+
+  .headerContent {
+    padding-top: 5%;
+  }
+  
+
+  .clockwise {
+    border-width: 90px;
+    width: 800px;
+    height: 800px;
+  }
+  
+  .anticlockwise {
+    border-width: 55px;
+  }
+
+  .topText {
+    width: 380px;
+    margin-top: -330px;
+  }
+
+  .bottomText {
+    width: 400px;
+    margin-top: 325px;
+    /* margin-left: -4px; */
+  }
+  
+  .rightText {
+    width: 310px;
+    margin-left: 340px;
+  }
+
+  .leftText {
+    width: 330px;
+    margin-left: -340px;
+  }
+
+  #section06 {
+    padding-top: 50px;
+  }
+
+  .loaderOpp {
+    font-size: 115px;
+    border-width: 16px;
+  }
+
+  .description, .description3 {
+    font-size: 20px;
+  }
 
 }
