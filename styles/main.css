@@ -846,10 +846,10 @@ footer p {
   opacity: 0;
 }
 .is-visible-left {
-  animation: slideInLeft 2s normal forwards;
+  animation: slideInLeft 1.5s normal forwards;
 }
 .is-visible-right {
-  animation: slideInRight 2s normal forwards;
+  animation: slideInRight 1.5s normal forwards;
 }
 
 .fade-in {
@@ -1110,7 +1110,39 @@ h2 {
 
 .aboutInfo {
   font-size: 14px;
+  text-align: left;
+}
+
+
+.skillIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  margin: 10px 8px;
+  border: 2px solid rgb(189, 189, 224);
+  padding: 15px;
+  border-radius: 10px;
+  width: 75px; 
+  height: 75px;
+  color: #BACDCF;
+  opacity: 0;
+}
+
+.icon {
+  width: 45px;
+}
+
+.iconText {
+  text-align: bottom;
+  margin-top: 0px;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+i {
+  font-size: 50px;
 }
 
 
@@ -1121,6 +1153,7 @@ h2 {
 
 #project4 {
   border-width: 10px;
+  margin-top: 30px;
 }
 #project3 {
   border-width: 10px;

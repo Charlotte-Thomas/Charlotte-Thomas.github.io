@@ -126,10 +126,10 @@ function runPorftolio() {
           setTimeout(() => {
             element.classList.add('is-visible-left')
           }, 0)
-        } else if (element.className.includes('rightScrollSlow')) {
+        } else if (element.className.includes('rightScrollSlow') && screen.width > 500) {
           setTimeout(() => {
             element.classList.add('is-visible-right')
-          }, 800)
+          }, 750)
         } else if (element.className.includes('rightScroll')) {
           element.classList.add('is-visible-right')
         } else if (element.className.includes('fadeIn')) {
