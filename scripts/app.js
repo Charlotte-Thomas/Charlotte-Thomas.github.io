@@ -227,6 +227,7 @@ function runPorftolio() {
     const dots = document.getElementsByClassName('dot')
     const array = [...dots]
     array.forEach((e, i) => {
+      console.log(e)
       e.addEventListener('click', () => {
         console.log('hi')
         currentSlide(i + 1)
