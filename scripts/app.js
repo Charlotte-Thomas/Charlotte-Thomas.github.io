@@ -186,6 +186,65 @@ function runPorftolio() {
     )
   }
 
+
+  // ------ Slides -------
+
+  let slideIndex = 1
+  showSlides(slideIndex)
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n)
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n)
+  }
+
+  function showSlides(n) {
+    let i = 0
+    const slides = document.getElementsByClassName('mySlides')
+    const dots = document.getElementsByClassName('dot')
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none'
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(' active', '')
+    }
+    slides[slideIndex - 1].style.display = 'block'
+    dots[slideIndex - 1].className += ' active'
+
+  }
+
+  function buttons() {
+    const dots = document.getElementsByClassName('dot')
+    const array = [...dots]
+    array.forEach((e, i) => {
+      e.addEventListener('click', () => {
+        console.log('hi')
+        currentSlide(i + 1)
+      })
+    })
+
+    const prev = document.querySelector('.prev')
+    const next = document.querySelector('.next')
+    prev.addEventListener('click', () => {
+      plusSlides(-1)
+    })
+    next.addEventListener('click', () => {
+      plusSlides(1)
+    })
+  }
+
+  buttons()
+
 }
 
 
