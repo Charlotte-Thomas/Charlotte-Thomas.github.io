@@ -549,7 +549,7 @@ i {
 #projectHeader4 {
  /* background: rgb(0, 44, 50); */
  background:rgb(58, 79, 100);
- border: 7px solid rgba(173, 216, 230, 0.404);
+ border: 6px solid rgba(173, 216, 230, 0.404);
  /* background: rgb(52, 72, 90); */
  /* border-bottom: 15px solid rgb(103, 134, 149); */
 }
@@ -1392,16 +1392,28 @@ footer p {
   max-height: 550px;
 }
 
-.mySlides:nth-child(2) {
-  background-image: url('../images/giphy.gif');
-  background-size: cover;
-}
-
 .mySlides:nth-child(1) {
   background-image: url('../images/paintbrushes2.jpeg');
   background-size: cover;
 }
 
+.mySlides:nth-child(2) {
+  background-image: url('../images/Screenshot\ 2020-02-17\ at\ 14.25.33.png');
+  background-size: cover;
+  background-position-y: -70%;
+}
+
+.mySlides:nth-child(3) {
+  background-image: url('../images/dog7.jpg');
+  background-size: cover;
+  /* background-position-x: -440px; */
+  background-position-x: 70%;
+}
+
+.mySlides:nth-child(4) {
+  background-image: url('../images/giphy.gif');
+  background-size: cover;
+}
 
 /* Next & previous buttons */
 .prev, .next {
