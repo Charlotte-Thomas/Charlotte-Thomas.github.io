@@ -523,7 +523,10 @@ i {
 #projectHeader1 {
   /* background: rgb(43, 36, 54); */
   background: rgb(39, 33, 49);
-  /* border-bottom: 5px solid rgb(50, 49, 68); */
+  /* border: 5px solid rgb(50, 49, 68); */
+  /* border: 5px solid #966f73; */
+  border: 6px solid #44415d;
+  /* border: 5px solid #a29571; */
 }
 
 #projectHeader2 {
@@ -674,6 +677,7 @@ i {
   padding: 5px;
   font-size: 16px;
   background: rgba(52, 73, 94);
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
@@ -726,11 +730,16 @@ i {
   display: flex;
   align-items: space-between;
   width: 35%;
+  cursor: pointer;
 }
 
 .imgLink:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.links a:-webkit-any-link {
+  cursor: auto;
 }
 
 a {
@@ -744,7 +753,6 @@ a {
   display: none;
   /* animation: links 1s normal; */
   margin-left: 20px;
-  /* width: 100%; */
 }
 
 
@@ -1368,20 +1376,29 @@ footer p {
 
 /* Hide the images by default */
 .mySlides {
-  
+  /* height: 100%; */
 }
 
 .slideContent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.356);
+  /* background-color: rgba(0, 0, 0, 0.356); */
+  background-color: rgba(0, 0, 0, 0.568);
+  height: 500px;
+  min-height: 550px;
+  max-height: 550px;
+}
+
+.mySlides:nth-child(2) {
+  background-image: url('../images/giphy.gif');
+  background-size: cover;
 }
 
 .mySlides:nth-child(1) {
-  background-image: url('../images/invaders.png');
+  background-image: url('../images/paintbrushes2.jpeg');
   background-size: cover;
 }
 

@@ -14,11 +14,11 @@ function runPorftolio() {
 
   function addStyles(button) {
     return `${button.style.boxShadow = 'none'}`,
-    setTimeout(() => {
-      `${button.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'}`
-    }, 500)
+      setTimeout(() => {
+        `${button.style.boxShadow = '6px 10px 7px rgba(20, 20, 20, 0.582)'}`
+      }, 500)
   }
-  
+
   homeButton.addEventListener('click', () => {
     home.scrollIntoView({ behavior: 'smooth' })
     addStyles(homeButton)
@@ -74,20 +74,20 @@ function runPorftolio() {
   // function fullArray() {
   linkArray.forEach((item) => {
     const position = linkArray.indexOf(item)
-    item.addEventListener('mouseover', () => {
-      linkText[position].style.display = 'block'
-      // linkText[position].style.marginLeft = '20px'
-      linkText[position].style.animation = 'links 1s normal'
-      // linkText[position].style.animation = 'links 1s normal'
-      // setTimeout(() => {
-      //   linkText[position].style.animation = ' linksOut 1s normal forwards'
-      //   // linkText[position].style.display = 'none'
-      //   // setTimeout(() => {
-      //   //   linkText[position].style.display = 'none'
-      // }, 3000)
-      //   console.log('bye')
-      // }, 2000)
-    })
+    // item.addEventListener('mouseover', () => {      <------------!IMPORTANT: add this if you want animation on hover instead of auto
+    linkText[position].style.display = 'block'
+    // linkText[position].style.marginLeft = '20px'
+    linkText[position].style.animation = 'links 1s normal'
+    // linkText[position].style.animation = 'links 1s normal'
+    // setTimeout(() => {
+    //   linkText[position].style.animation = ' linksOut 1s normal forwards'
+    //   // linkText[position].style.display = 'none'
+    //   // setTimeout(() => {
+    //   //   linkText[position].style.display = 'none'
+    // }, 3000)
+    //   console.log('bye')
+    // }, 2000)
+    // })
   })
 
   // linkArray.forEach((item) => {
