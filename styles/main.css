@@ -532,7 +532,7 @@ i {
 #projectHeader2 {
   background: rgb(37, 51, 70);
   background: rgb(44, 57, 75);
-  border: 7px solid rgb(82, 111, 124);
+  border: 6px solid rgb(82, 111, 124);
 }
 
 /* rgb(61, 71, 90) */
@@ -543,7 +543,7 @@ i {
  /* background: rgb(4, 66, 66); */
  background: rgb(25, 71, 75);
  background: rgb(26, 79, 82);
- border: 7px solid rgba(7, 131, 131, 0.6);
+ border: 6px solid rgba(7, 131, 131, 0.6);
 }
 
 #projectHeader4 {
@@ -931,6 +931,138 @@ footer p {
 
 
 
+
+/* -------- slides ------- */
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  /* height: 100%; */
+}
+
+.slideContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.356); */
+  background-color: rgba(0, 0, 0, 0.568);
+  height: 500px;
+  min-height: 550px;
+  max-height: 550px;
+}
+
+.mySlides:nth-child(1) {
+  background-image: url('../images/paintbrushes2.jpeg');
+  background-size: cover;
+}
+
+.mySlides:nth-child(2) {
+  background-image: url('../images/Screenshot\ 2020-02-17\ at\ 14.25.33.png');
+  background-size: cover;
+  background-position-y: -70%;
+}
+
+.mySlides:nth-child(3) {
+  background-image: url('../images/dog7.jpg');
+  background-size: cover;
+  /* background-position-x: -440px; */
+  background-position-x: 70%;
+}
+
+.mySlides:nth-child(4) {
+  background-image: url('../images/giphy.gif');
+  background-size: cover;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 13px;
+  color: white;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(121, 118, 118, 0.212);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dots {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
 /* ----------- tablet size -------------- */
 
 @media only screen and (max-width: 1200px) {
@@ -997,6 +1129,14 @@ footer p {
 
   .skills {
     width: 100%;
+  }
+
+  .slideshow-container {
+    width: 90%;
+  }
+
+  .overview {
+    width: 80%;
   }
 }
 
@@ -1176,7 +1316,7 @@ i {
 
 .projectHeader {
   height: 100px;
-  width: 90%;
+  width: 100%;
 }
 
 #projectHeader4 {
@@ -1361,133 +1501,3 @@ footer p {
 }
 
 
-
-/* -------- slides ------- */
-
-
-/* Slideshow container */
-.slideshow-container {
-  width: 80%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 100px;
-}
-
-/* Hide the images by default */
-.mySlides {
-  /* height: 100%; */
-}
-
-.slideContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.356); */
-  background-color: rgba(0, 0, 0, 0.568);
-  height: 500px;
-  min-height: 550px;
-  max-height: 550px;
-}
-
-.mySlides:nth-child(1) {
-  background-image: url('../images/paintbrushes2.jpeg');
-  background-size: cover;
-}
-
-.mySlides:nth-child(2) {
-  background-image: url('../images/Screenshot\ 2020-02-17\ at\ 14.25.33.png');
-  background-size: cover;
-  background-position-y: -70%;
-}
-
-.mySlides:nth-child(3) {
-  background-image: url('../images/dog7.jpg');
-  background-size: cover;
-  /* background-position-x: -440px; */
-  background-position-x: 70%;
-}
-
-.mySlides:nth-child(4) {
-  background-image: url('../images/giphy.gif');
-  background-size: cover;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.dots {
-  align-self: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
