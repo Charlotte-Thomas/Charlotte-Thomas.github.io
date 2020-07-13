@@ -600,6 +600,14 @@ i {
   box-shadow: 10px 10px 10px rgba(20, 20, 20, 0.582)
 }
 
+.headerImg5 {
+  width: 70px;
+  border-radius: 50%;
+  border: 3px solid #ffd6a4;
+  padding: 8px;
+  box-shadow: 10px 10px 10px rgba(20, 20, 20, 0.582)
+}
+
 .projectName {
   font-size: 40px;
   text-align: center;
@@ -631,6 +639,10 @@ i {
 #name5 {
   color: #ffd6a5;
   /* color: rgb(152, 131, 107); */
+}
+
+span {
+  font-size: 0.7em;
 }
 
 .overview {
@@ -665,7 +677,7 @@ i {
   /* background:rgba(169, 98, 13, 0.9); */
   background:rgb(142, 94, 44);
   /* color: #ffd6a5; */
-  /* color: white; */
+  color: #eee6dd;
 }
 
 .projectType {
@@ -716,7 +728,7 @@ i {
 .info5 {
   /* background:rgba(250, 144, 18, 0.9); */
   background:rgb(142, 94, 44);
-  color: #e4d5c5;
+  color: #eee6dd;
 }
 
 .projectImg {
@@ -784,7 +796,7 @@ a {
 }
 
 .linkText5 {
-  color: #e4d5c5;
+  color: #eee6dd;
 }
 
 
@@ -1366,6 +1378,11 @@ i {
 #name1 {
   font-size: 23px;
   width: 40%;
+}
+
+.headerImg5 {
+  width: 40px;
+  border-width: 2px;
 }
 
 .headerImg4 {
