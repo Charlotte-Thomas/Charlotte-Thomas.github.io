@@ -514,6 +514,7 @@ i {
   width: 100%;
   padding: 20px 0;
   margin-bottom: 20px;
+  height: 130px;
   /* border-radius: 35px; */
   /* background:  rgba(52, 73, 94, 0.637); */
   /* border: 16px solid rgb(18, 18, 53); */
@@ -552,6 +553,14 @@ i {
  border: 6px solid rgba(173, 216, 230, 0.404);
  /* background: rgb(52, 72, 90); */
  /* border-bottom: 15px solid rgb(103, 134, 149); */
+}
+
+#projectHeader5 {
+ /* background:#fa9012; */
+ /* background:rgba(250, 144, 18, 0.9); */
+ /* background:rgb(52, 73, 94); */
+ background:rgb(195, 118, 39);
+ border: 6px solid #ffd6a5;
 }
 
 .headerImg {
@@ -619,6 +628,10 @@ i {
 #name4 {
   color: rgb(128, 191, 204);
 }
+#name5 {
+  color: #ffd6a5;
+  /* color: rgb(152, 131, 107); */
+}
 
 .overview {
   display: flex;
@@ -644,6 +657,15 @@ i {
 .overview3{
   /* background: rgb(2, 36, 46); */
   background: rgb(43, 83, 88);
+}
+
+.overview5{
+  /* background:#ffd6a5; */
+  /* background:rgba(250, 144, 18, 0.9); */
+  /* background:rgba(169, 98, 13, 0.9); */
+  background:rgb(142, 94, 44);
+  /* color: #ffd6a5; */
+  /* color: white; */
 }
 
 .projectType {
@@ -689,6 +711,12 @@ i {
 
 .info3 {
   background: rgb(43, 83, 88);
+}
+
+.info5 {
+  /* background:rgba(250, 144, 18, 0.9); */
+  background:rgb(142, 94, 44);
+  color: #e4d5c5;
 }
 
 .projectImg {
@@ -753,6 +781,10 @@ a {
   display: none;
   /* animation: links 1s normal; */
   margin-left: 20px;
+}
+
+.linkText5 {
+  color: #e4d5c5;
 }
 
 
@@ -963,24 +995,30 @@ footer p {
 }
 
 .mySlides:nth-child(1) {
+  background-image: url('../images/findrecipes.png');
+  background-size: cover;
+  background-position-y: 30px;
+}
+
+.mySlides:nth-child(2) {
   background-image: url('../images/paintbrushes2.jpeg');
   background-size: cover;
 }
 
-.mySlides:nth-child(2) {
+.mySlides:nth-child(3) {
   background-image: url('../images/Screenshot\ 2020-02-17\ at\ 14.25.33.png');
   background-size: cover;
   background-position-y: -70%;
 }
 
-.mySlides:nth-child(3) {
+.mySlides:nth-child(4) {
   background-image: url('../images/dog7.jpg');
   background-size: cover;
   /* background-position-x: -440px; */
   background-position-x: 70%;
 }
 
-.mySlides:nth-child(4) {
+.mySlides:nth-child(5) {
   background-image: url('../images/giphy.gif');
   background-size: cover;
 }
