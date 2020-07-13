@@ -563,6 +563,12 @@ i {
  border: 6px solid #ffd6a5;
 }
 
+#projectHeader6 {
+ border:6px solid #455a63;
+ /* background: #37474e; */
+ background: #263239;
+}
+
 .headerImg {
   width: 65px;
   /* margin-top: 15px; */
@@ -608,6 +614,14 @@ i {
   box-shadow: 10px 10px 10px rgba(20, 20, 20, 0.582)
 }
 
+.headerImg6 {
+  width: 65px;
+  border-radius: 50%;
+  border: 3px solid #bec8cf;
+  padding: 8px;
+  box-shadow: 10px 10px 10px rgba(20, 20, 20, 0.582)
+}
+
 .projectName {
   font-size: 40px;
   text-align: center;
@@ -639,6 +653,9 @@ i {
 #name5 {
   color: #ffd6a5;
   /* color: rgb(152, 131, 107); */
+}
+#name6 {
+  color: #bec8ce;
 }
 
 span {
@@ -1003,30 +1020,36 @@ footer p {
 }
 
 .mySlides:nth-child(1) {
-  background-image: url('../images/findrecipes.png');
+  background-image: url('../images/headphones2.jpg');
   background-size: cover;
   background-position-y: 30px;
 }
 
 .mySlides:nth-child(2) {
+  background-image: url('../images/findrecipes.png');
+  background-size: cover;
+  background-position-y: 30px;
+}
+
+.mySlides:nth-child(3) {
   background-image: url('../images/paintbrushes2.jpeg');
   background-size: cover;
 }
 
-.mySlides:nth-child(3) {
+.mySlides:nth-child(4) {
   background-image: url('../images/Screenshot\ 2020-02-17\ at\ 14.25.33.png');
   background-size: cover;
   background-position-y: -70%;
 }
 
-.mySlides:nth-child(4) {
+.mySlides:nth-child(5) {
   background-image: url('../images/dog7.jpg');
   background-size: cover;
   /* background-position-x: -440px; */
   background-position-x: 70%;
 }
 
-.mySlides:nth-child(5) {
+.mySlides:nth-child(6) {
   background-image: url('../images/giphy.gif');
   background-size: cover;
 }
