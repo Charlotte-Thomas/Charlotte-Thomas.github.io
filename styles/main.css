@@ -688,10 +688,14 @@ span {
   background: rgb(43, 83, 88);
 }
 
-.overview5{
+.overview5 {
   background:rgb(142, 94, 44);
   background:rgb(160, 107, 51);
   color: #eee6dd;
+}
+
+.overview6 {
+  background:#455a63;
 }
 
 .projectType {
@@ -742,6 +746,10 @@ span {
 .info5 {
   background:rgb(160, 107, 51);
   color: #eee6dd;
+}
+
+.info6 {
+  background:#455a63;
 }
 
 .projectImg {
@@ -1397,6 +1405,11 @@ i {
 #name1 {
   font-size: 23px;
   width: 40%;
+}
+
+.headerImg6 {
+  width: 40px;
+  border-width: 2px;
 }
 
 .headerImg5 {
