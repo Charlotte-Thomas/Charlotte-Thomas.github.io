@@ -672,11 +672,8 @@ span {
 }
 
 .overview5{
-  /* background:#ffd6a5; */
-  /* background:rgba(250, 144, 18, 0.9); */
-  /* background:rgba(169, 98, 13, 0.9); */
   background:rgb(142, 94, 44);
-  /* color: #ffd6a5; */
+  background:rgb(160, 107, 51);
   color: #eee6dd;
 }
 
@@ -726,8 +723,7 @@ span {
 }
 
 .info5 {
-  /* background:rgba(250, 144, 18, 0.9); */
-  background:rgb(142, 94, 44);
+  background:rgb(160, 107, 51);
   color: #eee6dd;
 }
 
