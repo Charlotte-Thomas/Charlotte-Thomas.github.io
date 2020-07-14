@@ -895,7 +895,8 @@ footer {
   margin-bottom: 0;
   width: 100%;
   text-align: center;
-  border-top: 1px solid lightblue;
+  /* border-top: 1px solid lightblue; */
+  border-top: 1px solid rgb(148, 161, 172);
   opacity: 70%;
 }
 
@@ -910,7 +911,7 @@ footer p {
 .iconsLink {
   margin-left: 10px;
   color: white;
-  border: 1px solid lightblue;
+  border: 1px solid rgb(148, 161, 172);
   /* background: rgb(32, 32, 68); */
   padding: 7px 15px;
 }
