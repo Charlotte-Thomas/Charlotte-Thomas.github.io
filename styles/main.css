@@ -360,7 +360,8 @@ img {
 
 
 main {
-  border-top: 10px solid rgb(158, 217, 224);
+  /* border-top: 10px solid rgb(158, 217, 224); */
+  border-top: 10px solid rgb(148, 161, 172);
   display: flex;
   flex-direction: column;
   align-items: center;
