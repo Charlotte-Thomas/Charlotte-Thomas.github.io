@@ -263,7 +263,8 @@ img {
 .topText {
   position: absolute;
   width: 320px;
-  margin-top: -280px;
+  /* margin-top: -280px;  <-- was this*/
+  margin-top: -555px;
   opacity: 90%;
 }
 
@@ -271,7 +272,8 @@ img {
   position: absolute;
   width: 340px;
   transform: rotate(183deg);
-  margin-top: 270px;
+  /* margin-top: 270px; <--- was this*/
+  margin-top: 550px;
   margin-left: -10px;
   opacity: 90%;
 }
@@ -280,8 +282,8 @@ img {
   position: absolute;
   width: 260px;
   transform: rotate(90deg);
-  margin-left: 290px;
-  /* margin-left: 400px; */
+  /* margin-left: 290px; <--- was this*/
+  margin-left: 568px;
   opacity: 90%;
 }
 
@@ -289,8 +291,8 @@ img {
   position: absolute;
   width: 260px;
   transform: rotate(-90deg);
-  margin-left: -285px;
-  /* margin-left: 400px; */
+  /* margin-left: -285px; */
+  margin-left: -568px;
   opacity: 90%;
 }
 #section06 {
