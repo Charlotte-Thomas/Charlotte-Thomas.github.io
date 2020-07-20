@@ -1168,25 +1168,29 @@ footer p {
   .topText {
     position: absolute;
     width: 240px;
-    margin-top: -210px;
+    /* margin-top: -210px; old vs*/
+    margin-top: -430px;
   }
 
   .bottomText {
     width: 250px;
-    margin-top: 210px;
+    /* margin-top: 210px; old vs*/
+    margin-top: 420px;
     margin-left: -11px;
   }
   
   .rightText {
     width: 180px;
     transform: rotate(90deg);
-    margin-left: 220px;
+    /* margin-left: 220px; old vs */
+    margin-left: 440px;
   }
 
   .leftText {
     width: 180px;
     /* transform: rotate(90deg); */
-    margin-left: -220px;
+    /* margin-left: -220px; old vs */
+    margin-left: -440px;
   }
 
   h1 {
