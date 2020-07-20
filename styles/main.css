@@ -1253,25 +1253,29 @@ footer p {
   .topText {
     position: absolute;
     width: 140px;
-    margin-top: -120px;
+    /* margin-top: -120px; old vs*/
+    margin-top: -240px;
   }
 
   .bottomText {
     width: 150px;
-    margin-top: 120px;
+    /* margin-top: 120px; old vs */
+    margin-top: 240px;
     margin-left: -4px;
   }
   
   .rightText {
     width: 110px;
     transform: rotate(90deg);
-    margin-left: 125px;
+    /* margin-left: 125px; old vs*/
+    margin-left: 250px;
   }
 
   .leftText {
     width: 120px;
     /* transform: rotate(90deg); */
-    margin-left: -125px;
+    /* margin-left: -125px; old vs */
+    margin-left: -250px;
   }
 
   #section06 {
