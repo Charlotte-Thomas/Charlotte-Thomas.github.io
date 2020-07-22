@@ -559,11 +559,10 @@ i {
 }
 
 #projectHeader5 {
- /* background:#fa9012; */
- /* background:rgba(250, 144, 18, 0.9); */
- /* background:rgb(52, 73, 94); */
- background:rgb(195, 118, 39);
- border: 6px solid #ffd6a5;
+ /* background:rgb(195, 118, 39); */
+ background:rgb(64, 67, 78);
+ /* border: 6px solid #ffd6a5; */
+ border: 6px solid rgb(134 124 110);
 }
 
 #projectHeader6 {
@@ -692,8 +691,8 @@ span {
 }
 
 .overview5 {
-  background:rgb(142, 94, 44);
-  background:rgb(160, 107, 51);
+  /* background:rgb(160, 107, 51); */
+  background:rgb(64 67 78);
   color: #eee6dd;
 }
 
@@ -747,7 +746,8 @@ span {
 }
 
 .info5 {
-  background:rgb(160, 107, 51);
+  /* background:rgb(160, 107, 51); */
+  background:rgb(64 67 78);
   color: #eee6dd;
 }
 
