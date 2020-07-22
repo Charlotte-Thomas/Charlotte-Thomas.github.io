@@ -1168,29 +1168,29 @@ footer p {
   .topText {
     position: absolute;
     width: 240px;
-    /* margin-top: -210px; old vs*/
-    margin-top: -430px;
+    margin-top: -210px;
+    /* margin-top: -430px; */
   }
 
   .bottomText {
     width: 250px;
-    /* margin-top: 210px; old vs*/
-    margin-top: 420px;
+    margin-top: 210px;
+    /* margin-top: 420px; */
     margin-left: -11px;
   }
   
   .rightText {
     width: 180px;
     transform: rotate(90deg);
-    /* margin-left: 220px; old vs */
-    margin-left: 440px;
+    margin-left: 220px;
+    /* margin-left: 440px; */
   }
 
   .leftText {
     width: 180px;
     /* transform: rotate(90deg); */
-    /* margin-left: -220px; old vs */
-    margin-left: -440px;
+    margin-left: -220px;
+    /* margin-left: -440px; */
   }
 
   h1 {
@@ -1253,29 +1253,29 @@ footer p {
   .topText {
     position: absolute;
     width: 140px;
-    /* margin-top: -120px; old vs*/
-    margin-top: -240px;
+    margin-top: -120px;
+    /* margin-top: -240px; */
   }
 
   .bottomText {
     width: 150px;
-    /* margin-top: 120px; old vs */
-    margin-top: 240px;
+    margin-top: 120px;
+    /* margin-top: 240px; */
     margin-left: -4px;
   }
   
   .rightText {
     width: 110px;
     transform: rotate(90deg);
-    /* margin-left: 125px; old vs*/
-    margin-left: 250px;
+    margin-left: 125px;
+    /* margin-left: 250px; */
   }
 
   .leftText {
     width: 120px;
     /* transform: rotate(90deg); */
-    /* margin-left: -125px; old vs */
-    margin-left: -250px;
+    margin-left: -125px;
+    /* margin-left: -250px; */
   }
 
   #section06 {
@@ -1620,7 +1620,7 @@ footer p {
 }
 
 
-/* ----- fix for chrome -----  */
+/* --------- fixes for chrome --------  */
 
 @media screen and (-webkit-min-device-pixel-ratio:0)
   and (min-resolution:.001dpcm) {
@@ -1637,4 +1637,35 @@ footer p {
       margin-left: -568px;
     }
 }
-
+/* mobile */
+@media only screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+  .topText {
+    margin-top: -240px;
+  }
+  .bottomText {
+    margin-top: 240px;
+  }
+  .rightText {
+    margin-left: 250px;
+  }
+  .leftText {
+    margin-left: -250px;
+  }
+}
+/* tablet */
+@media only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+  .topText {
+    margin-top: -430px;
+  }
+  .bottomText {
+    margin-top: 420px;
+  }
+  .rightText {
+    margin-left: 440px;
+  }
+  .leftText {
+    margin-left: -440px;
+  }
+}
