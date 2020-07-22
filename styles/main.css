@@ -263,8 +263,8 @@ img {
 .topText {
   position: absolute;
   width: 320px;
-  /* margin-top: -280px;  <-- was this*/
-  margin-top: -555px;
+  margin-top: -280px;
+  /* margin-top: -555px; */
   opacity: 90%;
 }
 
@@ -272,8 +272,8 @@ img {
   position: absolute;
   width: 340px;
   transform: rotate(183deg);
-  /* margin-top: 270px; <--- was this*/
-  margin-top: 550px;
+  margin-top: 270px;
+  /* margin-top: 550px; */
   margin-left: -10px;
   opacity: 90%;
 }
@@ -282,8 +282,8 @@ img {
   position: absolute;
   width: 260px;
   transform: rotate(90deg);
-  /* margin-left: 290px; <--- was this*/
-  margin-left: 568px;
+  margin-left: 290px;
+  /* margin-left: 568px; */
   opacity: 90%;
 }
 
@@ -291,8 +291,8 @@ img {
   position: absolute;
   width: 260px;
   transform: rotate(-90deg);
-  /* margin-left: -285px; */
-  margin-left: -568px;
+  margin-left: -285px;
+  /* margin-left: -568px; */
   opacity: 90%;
 }
 #section06 {
@@ -1619,4 +1619,22 @@ footer p {
 
 }
 
+
+/* ----- fix for chrome -----  */
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    .topText {
+      margin-top: -555px;
+    } 
+    .bottomText {
+      margin-top: 550px;
+    } 
+    .rightText {
+      margin-left: 568px;
+    }
+    .leftText {
+      margin-left: -568px;
+    }
+}
 
