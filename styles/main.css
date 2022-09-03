@@ -197,8 +197,14 @@ h3 {
   /* border-right: 80px solid rgba(127, 189, 204, 0.5); */
   /* border-right: 80px solid rgba(70, 126, 151, 0.62); */
   border-radius: 50%;
-  width: 680px;
-  height: 680px;
+  width: 620px;
+  height: 620px;
+  min-height: 620px;
+  margin-top: -10px;
+  /* min-width: 520px;
+  max-width: 520px;
+  min-height: 520px;
+  max-height: 520px; */
   /* width: 34rem;
   height: 45rem; */
   animation: spin 25s linear infinite;
@@ -1673,11 +1679,21 @@ footer p {
   /* body {
     width: 98.9vw;
   } */
+  /* .clockwise {
+    width: 560px;
+    height: 680px;
+  }
+  .anticlockwise {
+    width: 100%;
+    height: 100%;
+    
+  } */
 
   .topText {
     /* margin-top: -555px; */
     /* margin-top: -41rem; */
     margin-top: -105%;
+
   }
   .bottomText {
     /* margin-top: 550px; */
