@@ -173,7 +173,8 @@ header {
 }
 
 h1 {
-  font-size: 90px;
+  /* font-size: 90px; */
+  font-size: 83px;
   color: #e9e7e0;
   /* font-family: 'Roboto Slab', sans-serif; */
   font-family: "Ropa Sans", sans-serif;
@@ -283,7 +284,8 @@ img {
 .topText {
   position: absolute;
   width: 320px;
-  margin-top: -280px;
+  /* margin-top: -280px; old*/
+  margin-top: -105%;
   /* margin-top: -555px; */
   opacity: 90%;
 }
@@ -292,7 +294,8 @@ img {
   position: absolute;
   width: 340px;
   transform: rotate(183deg);
-  margin-top: 270px;
+  /* margin-top: 270px; old */
+  margin-top: 105%;
   /* margin-top: 550px; */
   margin-left: -10px;
   opacity: 90%;
@@ -302,7 +305,8 @@ img {
   position: absolute;
   width: 260px;
   transform: rotate(90deg);
-  margin-left: 290px;
+  /* margin-left: 290px; old */
+  margin-left: 110%;
   /* margin-left: 568px; */
   opacity: 90%;
 }
@@ -311,7 +315,8 @@ img {
   position: absolute;
   width: 260px;
   transform: rotate(-90deg);
-  margin-left: -285px;
+  /* margin-left: -285px; old*/
+  margin-left: -110%;
   /* margin-left: -568px; */
   opacity: 90%;
 }
@@ -1217,29 +1222,30 @@ footer p {
   .topText {
     position: absolute;
     width: 240px;
-    margin-top: -210px;
+    /* margin-top: -210px; old */
+    margin-top: -430px;
     /* margin-top: -430px; */
   }
 
   .bottomText {
     width: 250px;
-    margin-top: 210px;
-    /* margin-top: 420px; */
+    /* margin-top: 210px; old */
+    margin-top: 420px;
     margin-left: -11px;
   }
 
   .rightText {
     width: 180px;
     transform: rotate(90deg);
-    margin-left: 220px;
-    /* margin-left: 440px; */
+    /* margin-left: 220px; */
+    margin-left: 440px;
   }
 
   .leftText {
     width: 180px;
     /* transform: rotate(90deg); */
-    margin-left: -220px;
-    /* margin-left: -440px; */
+    /* margin-left: -220px; */
+    margin-left: -440px;
   }
 
   h1 {
@@ -1305,29 +1311,29 @@ footer p {
   .topText {
     position: absolute;
     width: 140px;
-    margin-top: -120px;
-    /* margin-top: -240px; */
+    /* margin-top: -120px; */
+    margin-top: -240px;
   }
 
   .bottomText {
     width: 150px;
-    margin-top: 120px;
-    /* margin-top: 240px; */
+    /* margin-top: 120px; */
+    margin-top: 240px;
     margin-left: -4px;
   }
 
   .rightText {
     width: 110px;
     transform: rotate(90deg);
-    margin-left: 125px;
-    /* margin-left: 250px; */
+    /* margin-left: 125px; */
+    margin-left: 250px;
   }
 
   .leftText {
     width: 120px;
     /* transform: rotate(90deg); */
-    margin-left: -125px;
-    /* margin-left: -250px; */
+    /* margin-left: -125px; */
+    margin-left: -250px;
   }
 
   #section06 {
